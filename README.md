@@ -1,14 +1,14 @@
-\# Arduino\_LM35\_TempMonitor
+# Arduino\_LM35\_TempMonitor
 
 
 
-\## 1. Mô tả dự án (Description)
+## 1. Mô tả dự án (Description)
 
 Hệ thống giám sát nhiệt độ sử dụng vi điều khiển Arduino và cảm biến nhiệt độ tương tự LM35. Dữ liệu được đọc qua các kênh Analog và gửi lên máy tính thông qua giao tiếp Serial dưới định dạng CSV để dễ dàng xử lý và vẽ đồ thị.
 
 
 
-\## 2. Tính năng (Features)
+## 2. Tính năng (Features)
 
 \- Đọc nhiệt độ độc lập từ 2 kênh cảm biến LM35 (chân A0 và A1).
 
@@ -18,7 +18,7 @@ Hệ thống giám sát nhiệt độ sử dụng vi điều khiển Arduino và
 
 
 
-\## 3. Phần cứng yêu cầu (Hardware)
+## 3. Phần cứng yêu cầu (Hardware)
 
 | Linh kiện | Số lượng | Ghi chú |
 
@@ -32,7 +32,7 @@ Hệ thống giám sát nhiệt độ sử dụng vi điều khiển Arduino và
 
 
 
-\## 4. Hướng dẫn sử dụng (Usage)
+## 4. Hướng dẫn sử dụng (Usage)
 
 1\. Kết nối chân VCC và GND của 2 cảm biến LM35 vào nguồn 5V của Arduino.
 
@@ -46,7 +46,7 @@ Hệ thống giám sát nhiệt độ sử dụng vi điều khiển Arduino và
 
 
 
-\## 5. Cấu trúc thư mục (Folder Structure)
+## 5. Cấu trúc thư mục (Folder Structure)
 
 ```text
 
@@ -65,8 +65,7 @@ Arduino\_LM35\_TempMonitor/
 └── README.md              # Tài liệu giới thiệu dự án
 
 
-
-\## 6. Thành viên thực hiện
+## 6. Thành viên thực hiện
 
 * Trần Phúc Thịnh - Phát triển firmware \& quản lý Git
 
