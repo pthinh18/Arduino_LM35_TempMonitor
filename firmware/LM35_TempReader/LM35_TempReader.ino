@@ -1,18 +1,23 @@
-const int lm35Pin = A0; // Khai báo chân Analog A0 nối với LM35
+const int numSensors = 2;
+const int sensorPins[numSensors] = {A0, A1};
+int adcValues[numSensors];
+float temperatures[numSensors];
 
 void setup() {
-  Serial.begin(9600);   // Khởi tạo giao tiếp Serial
+  Serial.begin(9600);
 }
 
 void loop() {
-  int adcValue = analogRead(lm35Pin); // Đọc giá trị ADC từ cảm biến
-  
-  // Tính toán nhiệt độ theo công thức
-  float temperature = (adcValue * 500.0) / 1023.0; 
+  // Đọc dữ liệu và tính toán nhiệt độ cho từng kênh
+  for (int i = 0; i < numSensors; i++) {
+    adcValues[i] = analogRead(sensorPins[i]);
+    temperatures[i] = (adcValues[i] * 500.0) / 1023.0;
+  }
 
-  Serial.print("Nhiet do: ");
-  Serial.print(temperature);
-  Serial.println(" *C");
+  // Xuất dữ liệu qua Serial theo định dạng CSV (Comma-Separated Values)
+  Serial.print(temperatures[0]);
+  Serial.print(",");
+  Serial.println(temperatures[1]);
 
-  delay(1000); // Đợi 1 giây trước khi đọc lần tiếp theo
+  delay(1000);
 }
