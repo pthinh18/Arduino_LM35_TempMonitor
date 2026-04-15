@@ -69,3 +69,8 @@ Arduino\_LM35\_TempMonitor/
 
 * Trần Phúc Thịnh - Phát triển firmware \& quản lý Git
 
+---
+## 👤 Tác giả (Author)
+* **Trần Phúc Thịnh** - Sinh viên ngành Kỹ thuật.
+* **Trang cá nhân Portfolio:** [https://pthinh18.github.io](https://pthinh18.github.io)
+* **Email liên hệ:** binvn0125@gmail.com
