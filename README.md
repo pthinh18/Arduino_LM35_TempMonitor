@@ -64,7 +64,7 @@ Arduino\_LM35\_TempMonitor/
 
 └── README.md              # Tài liệu giới thiệu dự án
 
-
+```
 ## 6. Thành viên thực hiện
 
 * Trần Phúc Thịnh - Phát triển firmware \& quản lý Git
